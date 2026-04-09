@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:cdn.discordapp.com)",
+      "Bash(find C:UsersfacuiDesktopDashboardFM -type f -name *)"
+    ]
+  }
+}

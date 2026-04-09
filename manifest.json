@@ -1,0 +1,38 @@
+{
+  "name": "NovaAgencyTEC",
+  "short_name": "NovaTEC",
+  "description": "Automatizamos tu negocio. Vos solo vendés.",
+  "start_url": "https://novaagency.info/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#7C3AED",
+  "orientation": "portrait-primary",
+  "lang": "es-AR",
+  "icons": [
+    {
+      "src": "https://novaagency.info/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://novaagency.info/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Contactanos",
+      "url": "https://novaagency.info/#contacto",
+      "description": "Ir al formulario de contacto"
+    },
+    {
+      "name": "Casos de éxito",
+      "url": "https://novaagency.info/#casos",
+      "description": "Ver proyectos realizados"
+    }
+  ]
+}
