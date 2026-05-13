@@ -1,0 +1,194 @@
+.caso-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeIn var(--transition-normal);
+}
+
+/* ── Header ── */
+.caso-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.caso-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.caso-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.caso-header h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.caso-subtitle {
+  font-size: 0.85rem;
+}
+
+/* Hero stat */
+.caso-hero-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 1rem 1.75rem;
+  min-width: 130px;
+  text-align: center;
+}
+
+.hero-stat-icon {
+  color: var(--accent-primary);
+  margin-bottom: 0.15rem;
+}
+
+.hero-stat-value {
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--accent-primary);
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* ── Noche banner ── */
+.caso-noche {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.1rem 1.4rem;
+  border-left: 3px solid var(--accent-primary);
+}
+
+.noche-emoji {
+  font-size: 1.6rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.noche-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.noche-desc {
+  font-size: 0.83rem;
+  line-height: 1.55;
+}
+
+.noche-desc strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+/* ── Grid de logros ── */
+.caso-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.caso-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem;
+}
+
+.caso-card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.caso-card-titulo {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  line-height: 1.3;
+}
+
+.caso-card-desc {
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+/* ── Stats strip ── */
+.caso-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.2rem 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.caso-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  text-align: center;
+}
+
+.caso-stat-value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+}
+
+.caso-stat-label {
+  font-size: 0.73rem;
+}
+
+.caso-divider {
+  width: 1px;
+  height: 36px;
+  background: var(--border-color);
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .caso-header {
+    flex-direction: column;
+  }
+  .caso-hero-stat {
+    width: 100%;
+  }
+  .caso-divider {
+    display: none;
+  }
+}

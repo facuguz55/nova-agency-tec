@@ -14,6 +14,7 @@ import SheetViewer from './pages/SheetViewer';
 import Ventas from './pages/Ventas';
 import Mails from './pages/Mails';
 import Cupones from './pages/Cupones';
+import CasoExito from './pages/CasoExito';
 import { getSettings } from './services/dataService';
 import './App.css';
 
@@ -53,6 +54,7 @@ function App() {
             <Route path="/mails" element={<Mails />} />
             <Route path="/ventas" element={<Ventas />} />
             <Route path="/cupones" element={<Cupones />} />
+            <Route path="/caso-exito" element={<CasoExito />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="*" element={<Navigate to="/dashboard" replace />} />
           </Routes>
