@@ -908,6 +908,94 @@
     }
 
     /* ===========================
+       ECOSISTEMA DE APPS
+    =========================== */
+    .ecosystem-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .app-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+      transition: all var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+    .app-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+    }
+    .app-card.orange::after { background: linear-gradient(to bottom, var(--orange), var(--orange-light)); }
+    .app-card.purple::after { background: linear-gradient(to bottom, var(--purple), var(--purple-light)); }
+    .app-card.cyan::after { background: linear-gradient(to bottom, var(--cyan), #22d3ee); }
+    .app-card.blue::after { background: linear-gradient(to bottom, var(--blue), var(--blue-light)); }
+    .app-card.green::after { background: linear-gradient(to bottom, var(--green), var(--green-light)); }
+    .app-card:hover {
+      background: var(--bg-card-hover);
+      transform: translateY(-4px);
+      box-shadow: 0 24px 64px rgba(0,0,0,0.35);
+    }
+    .app-card.orange:hover { border-color: rgba(249,115,22,0.3); box-shadow: 0 24px 64px rgba(0,0,0,0.35), 0 0 30px rgba(249,115,22,0.08); }
+    .app-card.purple:hover { border-color: rgba(124,58,237,0.3); box-shadow: 0 24px 64px rgba(0,0,0,0.35), 0 0 30px rgba(124,58,237,0.08); }
+    .app-card.cyan:hover { border-color: rgba(6,182,212,0.3); box-shadow: 0 24px 64px rgba(0,0,0,0.35), 0 0 30px rgba(6,182,212,0.08); }
+    .app-card.blue:hover { border-color: rgba(37,99,235,0.3); box-shadow: 0 24px 64px rgba(0,0,0,0.35), 0 0 30px rgba(37,99,235,0.08); }
+    .app-card.green:hover { border-color: rgba(16,185,129,0.3); box-shadow: 0 24px 64px rgba(0,0,0,0.35), 0 0 30px rgba(16,185,129,0.08); }
+    .app-icon {
+      width: 52px; height: 52px;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .app-card h3 {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .app-card p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .app-status {
+      align-self: flex-start;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 100px;
+      letter-spacing: 0.03em;
+      margin-bottom: 16px;
+    }
+    .status-soon { background: rgba(255,255,255,0.06); color: var(--text-secondary); border: 1px solid rgba(255,255,255,0.12); }
+    .app-link {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: default;
+    }
+    @media (max-width: 900px) {
+      .ecosystem-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .ecosystem-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===========================
        PROCESO DE TRABAJO
     =========================== */
     #proceso {
@@ -1796,6 +1884,7 @@
         <ul class="nav-links">
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#casos">Casos de éxito</a></li>
+          <li><a href="#ecosistema">Ecosistema</a></li>
           <li><a href="#integraciones">Integraciones</a></li>
           <li><a href="#tecnologias">Tecnologías</a></li>
           <li><a href="#contacto">Contacto</a></li>
@@ -1812,6 +1901,7 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="#servicios" onclick="toggleMenu()">Servicios</a>
     <a href="#casos" onclick="toggleMenu()">Casos de éxito</a>
+    <a href="#ecosistema" onclick="toggleMenu()">Ecosistema</a>
     <a href="#integraciones" onclick="toggleMenu()">Integraciones</a>
     <a href="#tecnologias" onclick="toggleMenu()">Tecnologías</a>
     <a href="#contacto" onclick="toggleMenu()">Contacto</a>
@@ -2274,6 +2364,82 @@
             <span class="stack-pill">Landing de producto</span>
             <span class="stack-pill">Optimización visual</span>
           </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ========== ECOSISTEMA DE APPS ========== -->
+  <section id="ecosistema">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h6v6H4V4zm10 0h6v6h-6V4zM4 14h6v6H4v-6zm10 0h6v6h-6v-6z"/></svg>
+          Ecosistema
+        </div>
+        <h2 class="section-title">
+          Nuestro ecosistema de apps.
+        </h2>
+        <p class="section-subtitle">Además de construir a medida, desarrollamos nuestras propias herramientas. Así es el ecosistema de productos que estamos armando.</p>
+      </div>
+
+      <div class="ecosystem-grid">
+
+        <!-- App 1 (placeholder) -->
+        <div class="app-card orange fade-in fade-in-delay-1">
+          <div class="app-icon">🚀</div>
+          <span class="app-status status-soon">Próximamente</span>
+          <h3>App #1</h3>
+          <p>Descripción pendiente de esta app del ecosistema Nova.</p>
+          <span class="app-link">Más info pronto</span>
+        </div>
+
+        <!-- App 2 (placeholder) -->
+        <div class="app-card purple fade-in fade-in-delay-2">
+          <div class="app-icon">🚀</div>
+          <span class="app-status status-soon">Próximamente</span>
+          <h3>App #2</h3>
+          <p>Descripción pendiente de esta app del ecosistema Nova.</p>
+          <span class="app-link">Más info pronto</span>
+        </div>
+
+        <!-- App 3 (placeholder) -->
+        <div class="app-card cyan fade-in fade-in-delay-3">
+          <div class="app-icon">🚀</div>
+          <span class="app-status status-soon">Próximamente</span>
+          <h3>App #3</h3>
+          <p>Descripción pendiente de esta app del ecosistema Nova.</p>
+          <span class="app-link">Más info pronto</span>
+        </div>
+
+        <!-- App 4 (placeholder) -->
+        <div class="app-card blue fade-in fade-in-delay-1">
+          <div class="app-icon">🚀</div>
+          <span class="app-status status-soon">Próximamente</span>
+          <h3>App #4</h3>
+          <p>Descripción pendiente de esta app del ecosistema Nova.</p>
+          <span class="app-link">Más info pronto</span>
+        </div>
+
+        <!-- App 5 (placeholder) -->
+        <div class="app-card green fade-in fade-in-delay-2">
+          <div class="app-icon">🚀</div>
+          <span class="app-status status-soon">Próximamente</span>
+          <h3>App #5</h3>
+          <p>Descripción pendiente de esta app del ecosistema Nova.</p>
+          <span class="app-link">Más info pronto</span>
+        </div>
+
+        <!-- App 6 (placeholder) -->
+        <div class="app-card orange fade-in fade-in-delay-3">
+          <div class="app-icon">🚀</div>
+          <span class="app-status status-soon">Próximamente</span>
+          <h3>App #6</h3>
+          <p>Descripción pendiente de esta app del ecosistema Nova.</p>
+          <span class="app-link">Más info pronto</span>
         </div>
 
       </div>
