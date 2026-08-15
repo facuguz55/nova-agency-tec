@@ -1,0 +1,40 @@
+# NovaAgencyTEC
+
+> Agencia tecnológica argentina especializada en automatización de procesos, diseño web, personalización de tiendas TiendaNube y dashboards inteligentes con inteligencia artificial para ecommerce y negocios digitales.
+
+NovaAgencyTEC ayuda a negocios y ecommerce en Argentina a automatizar tareas repetitivas, diseñar su presencia web y construir paneles de control a medida, usando herramientas como n8n e integraciones de IA (Claude).
+
+## Servicios
+
+- **Automatización de Procesos**: recuperación de carritos abandonados, notificaciones automáticas, reportes diarios sin intervención humana, usando n8n e IA.
+- **Diseño Web y Personalización TiendaNube**: sitios a medida, banners, landing pages de producto, identidad visual y experiencia de compra que convierte.
+- **Dashboards Inteligentes**: paneles en tiempo real con ventas, stock, clientes y campañas para ecommerce y negocios digitales.
+- **Integración con Inteligencia Artificial**: clasificación automática de emails, respuestas sugeridas, análisis predictivo y generación de contenido con Claude AI.
+
+## Casos de éxito
+
+- Sistema de Recuperación de Carritos Abandonados
+- Analytics Dashboard — Panel SaaS para E-commerce
+- Ruleta de Premios — Sistema de Fidelización
+- Optimización Web de Emergencia — RIGHT Botines
+- Agente IA para Emails — Clasificación Automática
+- Rediseño Web Completo — Import Calabrese
+
+## Preguntas frecuentes
+
+- ¿Cuánto cuesta un proyecto? Automatizaciones simples desde $200 USD; dashboards, diseño web o apps a medida con presupuesto personalizado, siempre cotizado antes de arrancar.
+- ¿Cuánto tarda? Automatizaciones simples en 3-7 días; proyectos más complejos entre 2 y 6 semanas.
+- ¿Hace falta saber de tecnología? No, NovaAgencyTEC se encarga de toda la parte técnica.
+- ¿Trabajan con negocios chicos? Sí, para todos los tamaños y presupuestos.
+- ¿Qué pasa después de la entrega? Documentación, capacitación y plan de soporte mensual opcional.
+
+## Contacto
+
+- Sitio: https://novaagency.info/
+- WhatsApp: https://wa.me/5493424633285
+- Email: novaagencytec@gmail.com
+- Instagram: https://instagram.com/novaagencytec
+
+## Más información
+
+- Sitemap: https://novaagency.info/sitemap.xml

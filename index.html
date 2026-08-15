@@ -140,6 +140,33 @@
   }
   </script>
 
+  <!-- JSON-LD: ProfessionalService (agencia remota, sin local físico al público) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "NovaAgencyTEC",
+    "image": "https://novaagency.info/logo.png",
+    "url": "https://novaagency.info",
+    "telephone": "+54-342-463-3285",
+    "email": "novaagencytec@gmail.com",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Argentina"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "AR"
+    },
+    "description": "Agencia tecnológica argentina especializada en automatización de procesos, diseño web, personalización de tiendas TiendaNube y dashboards inteligentes con IA para ecommerce.",
+    "priceRange": "$$",
+    "sameAs": [
+      "https://instagram.com/novaagencytec",
+      "https://wa.me/5493424633285"
+    ]
+  }
+  </script>
+
   <!-- JSON-LD: FAQPage -->
   <script type="application/ld+json">
   {
@@ -2931,6 +2958,14 @@
                 </div>
                 <svg style="margin-left:auto;flex-shrink:0;color:var(--text-secondary);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
+              <button type="button" class="contact-channel" onclick="shareSite(this)" style="width:100%;text-align:left;">
+                <div class="contact-channel-icon" style="background:rgba(124,58,237,0.12);">🔗</div>
+                <div>
+                  <strong style="display:block;font-size:14px;font-weight:700;" id="share-label">Compartir</strong>
+                  <span style="font-size:13px;color:var(--text-secondary);">Mandale esta web a alguien</span>
+                </div>
+                <svg style="margin-left:auto;flex-shrink:0;color:var(--text-secondary);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
             </div>
           </div>
 
@@ -3132,6 +3167,22 @@
       if (!isOpen) item.classList.add('open');
     }
 
+
+    // ---- Compartir la web (Web Share API con fallback a copiar el link) ----
+    function shareSite(btn) {
+      const data = { title: 'NovaAgencyTEC', text: 'Automatización, diseño web y TiendaNube para tu negocio', url: 'https://novaagency.info/' };
+      if (navigator.share) {
+        navigator.share(data).catch(() => {});
+        return;
+      }
+      navigator.clipboard.writeText(data.url).then(() => {
+        const label = btn.querySelector('#share-label');
+        if (!label) return;
+        const original = label.textContent;
+        label.textContent = 'Link copiado ✓';
+        setTimeout(() => { label.textContent = original; }, 2000);
+      });
+    }
 
     // ---- Contact form → WhatsApp ----
     function submitForm(e) {
