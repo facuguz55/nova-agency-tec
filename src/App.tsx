@@ -36,6 +36,12 @@ function ThemeApplier() {
 }
 
 function App() {
+  // The public landing lives at the root domain. The operational dashboard keeps
+  // its existing routes and remains available at /dashboard (and its own host).
+  if (window.location.pathname === '/') {
+    return <iframe title="Nova Agency" src="/dimension/index.html" style={{ border: 0, width: '100vw', height: '100vh', display: 'block' }} />;
+  }
+
   return (
     <Router>
       <ThemeApplier />
