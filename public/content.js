@@ -2,15 +2,15 @@ window.NOVA = {
   "hero": "Automatizamos tu proceso, diseñamos tu presencia web y personalizamos tu tienda en TiendaNube. Todo lo que tu negocio digital necesita, en un solo lugar.",
   "services": [
     {
-      "title": "Automatización de Procesos",
-      "text": "Conectamos tus herramientas y automatizamos tareas repetitivas. Desde recuperación de carritos hasta notificaciones automáticas y reportes diarios sin intervención humana."
+      "title": "Apps y sistemas a medida",
+      "text": "Creamos aplicaciones web, paneles y sistemas propios para resolver cómo trabaja tu negocio. También conectamos herramientas y automatizamos tareas repetitivas."
     },
     {
       "title": "Diseño Web & TiendaNube",
       "text": "Diseñamos sitios web a medida y personalizamos tu tienda TiendaNube: banners, landing pages de producto, identidad visual, carrito optimizado y experiencia de compra que convierte."
     },
     {
-      "title": "Dashboards Inteligentes",
+      "title": "Dashboards y automatizaciones",
       "text": "Paneles de control en tiempo real para que veas todo tu negocio en un solo lugar. Ventas, stock, clientes, campañas — toda la información que importa."
     },
     {
