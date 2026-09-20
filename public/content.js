@@ -313,7 +313,7 @@ window.NOVA = {
     },
     {
       "title": "Nova Local",
-      "text": "Gestión de venta y stock para negocio físico con asistente de IA conversacional: registra ventas, crea y edita productos, controla stock, funciona offline y exporta a Excel.",
+      "text": "Plataforma web de gestión para locales de indumentaria y retail: ventas, stock por sucursal, productos, variantes, talles, caja, cambios, clientes, fichajes, reportes y análisis. Incluye asistencia con IA, integración con correo, suscripciones y una experiencia simple para escritorio y móvil.",
       "stack": [
         "React",
         "Supabase",
