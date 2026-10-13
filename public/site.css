@@ -141,7 +141,29 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 /* ---------- 2. Qué hacemos (blanco) ---------- */
 .what { background: var(--white); color: var(--ink); padding: clamp(72px, 10vw, 128px) var(--edge); }
 .what .sec-head p { color: var(--muted-light); }
-.packs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(24px, 3vw, 40px); }
+.packs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(40px, 5vw, 64px) clamp(32px, 4vw, 64px); }
+
+/* Sistema operativo con IA: bloque destacado */
+.aios {
+  margin-top: clamp(56px, 7vw, 96px);
+  display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: center;
+  background: var(--ink); color: var(--white); border-radius: 16px; padding: clamp(28px, 4.5vw, 56px);
+}
+.aios-kicker { font-size: 15px; font-weight: 600; color: var(--orange); margin-bottom: 12px; }
+.aios h3 { font-size: clamp(32px, 3.6vw, 52px); font-weight: 800; letter-spacing: -.035em; line-height: 1.02; }
+.aios-copy > p:not(.aios-kicker) { margin-top: 18px; color: #d4d4d4; max-width: 34em; }
+.aios-copy .btn { margin-top: 28px; }
+.aios-map { display: grid; grid-template-columns: auto minmax(40px, 1fr) minmax(0, 1.3fr); align-items: center; }
+.aios-sources { display: grid; gap: 0; height: 300px; grid-template-rows: repeat(6, 1fr); align-items: center; }
+.aios-sources li { padding: 8px 14px; border: 1px solid #3a3a3a; border-radius: 999px; font-size: 14px; color: #e6e6e6; white-space: nowrap; background: #1b1b1b; }
+.aios-lines { width: 100%; height: 300px; align-self: center; overflow: visible; }
+.aios-lines path { fill: none; stroke: var(--orange); stroke-width: 1.5; vector-effect: non-scaling-stroke; opacity: .7; }
+.js .aios-map .aios-lines path { stroke-dasharray: 400; stroke-dashoffset: 400; }
+.js .aios-map.seen .aios-lines path { stroke-dashoffset: 0; transition: stroke-dashoffset 1.4s cubic-bezier(.4,0,.2,1); }
+.aios-panel { background: #fff; color: var(--ink); border-radius: var(--r); padding: 20px 22px; box-shadow: 0 0 0 4px rgba(225,105,30,.25); }
+.aios-panel-title { font: 800 20px/1.2 var(--display); letter-spacing: -.02em; padding-bottom: 10px; border-bottom: 2px solid var(--orange); }
+.aios-panel li { padding: 9px 0; border-bottom: 1px solid var(--line-light); font-size: 15px; line-height: 1.4; }
+.aios-panel li:last-child { border-bottom: 0; }
 .pack { border-top: 4px solid var(--ink); padding-top: 22px; }
 .pack h3 { font-size: clamp(24px, 2.4vw, 30px); font-weight: 800; letter-spacing: -.025em; line-height: 1.1; }
 .pack > p { margin-top: 10px; color: var(--muted-light); }
@@ -341,7 +363,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .hb figcaption { font-size: 11px; padding: 3px 8px; left: 6px; top: 6px; }
   .mini-chat { padding-top: 32px; }
 
-  .packs, .jobs-small { grid-template-columns: 1fr; }
+  .packs, .jobs-small, .aios { grid-template-columns: 1fr; }
   .job-grid { grid-template-columns: 1fr; }
   .local, .contact { grid-template-columns: 1fr; }
   .quotes { grid-template-columns: 1fr; gap: 40px; }
@@ -350,6 +372,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 
 @media (max-width: 560px) {
+  .aios-map { grid-template-columns: 1fr; gap: 16px; }
+  .aios-sources { display: flex; flex-wrap: wrap; gap: 8px; }
+  .aios-lines { display: none; }
   .res-bot-nums { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; }
   .res-bot-nums b { font-size: 40px; }
   .res-grid { grid-template-columns: 1fr; }

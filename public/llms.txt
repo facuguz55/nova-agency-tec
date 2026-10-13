@@ -1,13 +1,14 @@
 # NovaAgencyTEC
 
-> Agencia de software de Santa Fe, Argentina (Facu y Mauri). Hace bots y CRM de WhatsApp, tiendas en Tiendanube y webs, sistemas de stock y caja para locales, y automatizaciones para negocios argentinos. También tiene un producto propio: Nova Local, un sistema para locales de ropa.
+> Agencia de software de Santa Fe, Argentina (Facu y Mauri). Hace diseño web, tiendas Tiendanube, email y WhatsApp marketing, bots y CRM, apps y sistemas a medida, sistemas operativos con IA y automatizaciones para negocios argentinos. También tiene un producto propio: Nova Local, un sistema para locales de ropa.
 
 ## Servicios
 
-- Bots y CRM de WhatsApp: respuestas con stock real, fotos, link de pago de Mercado Pago y estado del envío, con todos los chats en una bandeja.
-- Tiendas y webs: Tiendanube a medida, webs propias y migraciones de urgencia.
-- Sistemas para locales: stock por talle y sucursal, caja, empleados y fichajes, ventas desde el celular.
-- Automatizaciones: recuperación de carritos abandonados, mails, reportes y planillas automáticas.
+- Diseño web: sitios institucionales (para estudios, profesionales y comercios que trabajan con consultas), landings para campañas y de producto, páginas por rubro, sitios interactivos y embudos de venta.
+- Tiendanube: creación de la tienda para quien no sabe armarla (con capacitación), personalización, carga masiva de productos y fotos, migraciones, medios de pago y envío.
+- Email y WhatsApp marketing: recuperación de carritos abandonados, campañas segmentadas, mensajes según lo que hizo cada cliente, bots que atienden 24 horas y CRM.
+- Apps, sistemas y automatización: aplicaciones web, paneles y dashboards a medida, sistemas de stock y caja, tareas que se hacen solas, conexión entre herramientas, e inteligencia artificial (clasificación de mails, respuestas sugeridas, análisis de datos, asistentes).
+- Sistema operativo con IA: junta Tiendanube, Mercado Pago, Meta Ads, mails y planillas en un solo panel, con ventas y ganancia real (no solo lo que reporta Meta) y una IA para consultar los números del negocio.
 
 ## Casos
 

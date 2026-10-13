@@ -32,7 +32,7 @@
         seen.unobserve(e.target);
       });
     }, { threshold: .35 });
-    document.querySelectorAll('.night, .wa-demo, .res-bot, .res-grid li').forEach(el => seen.observe(el));
+    document.querySelectorAll('.night, .wa-demo, .res-bot, .res-grid li, .aios-map').forEach(el => seen.observe(el));
   }
 
   // WhatsApp flotante: aparece después del hero y se esconde en contacto.
