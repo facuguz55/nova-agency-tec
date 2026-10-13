@@ -12,9 +12,9 @@
 
 ## Casos
 
-- Bot de WhatsApp + CRM para vender álbumes del Mundial: ventas de USD 40.000, USD 20.000 y otras de USD 5.000 a 6.000 arrancaron en el bot.
+- Bot de WhatsApp + CRM para vender álbumes del Mundial: con dos semanas funcionando, arrancaron ventas de USD 5.000, USD 6.000, USD 20.000 y USD 40.000.
 - Right Botines (Santa Fe): migración de toda la tienda en una noche antes del Hot Sale (276 productos, de 19 a 7 hs) y CRM de WhatsApp con bot que consulta el stock real.
-- Right Botines: más de $2.800.000 recuperados en carritos abandonados.
+- Más de $2.800.000 recuperados en carritos abandonados para una tienda online, con mails automáticos.
 - FromNorth: ruleta de premios para compradores, 130 giros en un mes sin publicidad; más de USD 2.000 recuperados en carritos.
 - Import Calabrese (Santa Fe): rediseño completo de la tienda en menos de 3 días.
 
