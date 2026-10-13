@@ -35,7 +35,7 @@
     document.querySelectorAll('.work, .res-bot, .res-grid li, .aios-map').forEach(el => seen.observe(el));
   }
 
-  // Filas que se deslizan en el celu: flechas, puntitos y un empujón la primera vez.
+  // Filas que se deslizan en el celu: flechas y puntitos. Nunca se mueven solas.
   const arrow = d => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${d}"/></svg>`;
   document.querySelectorAll('.cards, .quotes').forEach(row => {
     const items = [...row.children];
@@ -60,14 +60,6 @@
     next.addEventListener('click', () => row.scrollBy({ left: step(), behavior: reduced ? 'auto' : 'smooth' }));
     row.addEventListener('scroll', () => requestAnimationFrame(sync), { passive: true });
     sync();
-    if (!reduced && 'IntersectionObserver' in window) {
-      const io = new IntersectionObserver(([e]) => {
-        if (!e.isIntersecting || row.scrollWidth <= row.clientWidth) return;
-        io.disconnect();
-        setTimeout(() => { row.scrollBy({ left: 70, behavior: 'smooth' }); setTimeout(() => row.scrollTo({ left: 0, behavior: 'smooth' }), 650); }, 400);
-      }, { threshold: .6 });
-      io.observe(row);
-    }
   });
 
   // WhatsApp flotante: aparece después del hero y se esconde en contacto.
