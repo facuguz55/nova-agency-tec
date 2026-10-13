@@ -1,38 +1,35 @@
 {
   "name": "NovaAgencyTEC",
   "short_name": "NovaTEC",
-  "description": "Automatizamos tu negocio. Vos solo vendés.",
+  "description": "Sistemas, webs y bots de WhatsApp para negocios argentinos.",
   "start_url": "https://novaagency.info/",
   "display": "standalone",
-  "background_color": "#0a0a0f",
-  "theme_color": "#7C3AED",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "orientation": "portrait-primary",
   "lang": "es-AR",
   "icons": [
     {
-      "src": "https://novaagency.info/logo.png",
-      "sizes": "192x192",
+      "src": "https://novaagency.info/assets/logo-nova-180.png",
+      "sizes": "180x180",
       "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "https://novaagency.info/logo.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ],
-  "categories": ["business", "productivity"],
+  "categories": [
+    "business",
+    "productivity"
+  ],
   "shortcuts": [
     {
-      "name": "Contactanos",
+      "name": "Escribinos",
       "url": "https://novaagency.info/#contacto",
-      "description": "Ir al formulario de contacto"
+      "description": "Contacto por WhatsApp"
     },
     {
-      "name": "Casos de éxito",
+      "name": "Casos",
       "url": "https://novaagency.info/#casos",
-      "description": "Ver proyectos realizados"
+      "description": "Trabajos con números reales"
     }
   ]
 }

@@ -1,0 +1,35 @@
+{
+  "name": "NovaAgencyTEC",
+  "short_name": "NovaTEC",
+  "description": "Sistemas, webs y bots de WhatsApp para negocios argentinos.",
+  "start_url": "https://novaagency.info/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "lang": "es-AR",
+  "icons": [
+    {
+      "src": "https://novaagency.info/assets/logo-nova-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "business",
+    "productivity"
+  ],
+  "shortcuts": [
+    {
+      "name": "Escribinos",
+      "url": "https://novaagency.info/#contacto",
+      "description": "Contacto por WhatsApp"
+    },
+    {
+      "name": "Casos",
+      "url": "https://novaagency.info/#casos",
+      "description": "Trabajos con números reales"
+    }
+  ]
+}

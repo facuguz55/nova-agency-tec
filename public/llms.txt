@@ -1,32 +1,31 @@
 # NovaAgencyTEC
 
-> Agencia tecnológica argentina especializada en automatización de procesos, diseño web, personalización de tiendas TiendaNube y dashboards inteligentes con inteligencia artificial para ecommerce y negocios digitales.
-
-NovaAgencyTEC ayuda a negocios y ecommerce en Argentina a automatizar tareas repetitivas, diseñar su presencia web y construir paneles de control a medida, usando herramientas como n8n e integraciones de IA (Claude).
+> Agencia de software de Santa Fe, Argentina (Facu y Mauri). Hace bots y CRM de WhatsApp, tiendas en Tiendanube y webs, sistemas de stock y caja para locales, y automatizaciones para negocios argentinos. También tiene un producto propio: Nova Local, un sistema para locales de ropa.
 
 ## Servicios
 
-- **Automatización de Procesos**: recuperación de carritos abandonados, notificaciones automáticas, reportes diarios sin intervención humana, usando n8n e IA.
-- **Diseño Web y Personalización TiendaNube**: sitios a medida, banners, landing pages de producto, identidad visual y experiencia de compra que convierte.
-- **Dashboards Inteligentes**: paneles en tiempo real con ventas, stock, clientes y campañas para ecommerce y negocios digitales.
-- **Integración con Inteligencia Artificial**: clasificación automática de emails, respuestas sugeridas, análisis predictivo y generación de contenido con Claude AI.
+- Bots y CRM de WhatsApp: respuestas con stock real, fotos, link de pago de Mercado Pago y estado del envío, con todos los chats en una bandeja.
+- Tiendas y webs: Tiendanube a medida, webs propias y migraciones de urgencia.
+- Sistemas para locales: stock por talle y sucursal, caja, empleados y fichajes, ventas desde el celular.
+- Automatizaciones: recuperación de carritos abandonados, mails, reportes y planillas automáticas.
 
-## Casos de éxito
+## Casos
 
-- Sistema de Recuperación de Carritos Abandonados
-- Analytics Dashboard — Panel SaaS para E-commerce
-- Ruleta de Premios — Sistema de Fidelización
-- Optimización Web de Emergencia — RIGHT Botines
-- Agente IA para Emails — Clasificación Automática
-- Rediseño Web Completo — Import Calabrese
+- Bot de WhatsApp + CRM para vender álbumes del Mundial: ventas de USD 40.000, USD 20.000 y otras de USD 5.000 a 6.000 arrancaron en el bot.
+- Right Botines (Santa Fe): migración de toda la tienda en una noche antes del Hot Sale (276 productos, de 19 a 7 hs) y CRM de WhatsApp con bot que consulta el stock real.
+- Right Botines: más de $2.800.000 recuperados en carritos abandonados.
+- FromNorth: ruleta de premios para compradores, 130 giros en un mes sin publicidad; más de USD 2.000 recuperados en carritos.
+- Import Calabrese (Santa Fe): rediseño completo de la tienda en menos de 3 días.
+
+## Nova Local
+
+Sistema para locales de ropa: stock por talle, color y sucursal, ventas, caja, empleados, cambios, clientes, reportes y asistente con IA. Web: https://local.novaagency.info
 
 ## Preguntas frecuentes
 
-- ¿Cuánto cuesta un proyecto? Automatizaciones simples desde $200 USD; dashboards, diseño web o apps a medida con presupuesto personalizado, siempre cotizado antes de arrancar.
-- ¿Cuánto tarda? Automatizaciones simples en 3-7 días; proyectos más complejos entre 2 y 6 semanas.
-- ¿Hace falta saber de tecnología? No, NovaAgencyTEC se encarga de toda la parte técnica.
-- ¿Trabajan con negocios chicos? Sí, para todos los tamaños y presupuestos.
-- ¿Qué pasa después de la entrega? Documentación, capacitación y plan de soporte mensual opcional.
+- ¿Cuánto cuesta? Automatizaciones simples desde USD 200; sistemas y apps a medida se cotizan antes de arrancar.
+- ¿Cuánto tarda? Automatizaciones simples de 3 a 7 días; sistemas más grandes de 2 a 6 semanas.
+- ¿Trabajan con otras ciudades? Sí, con todo el país, por WhatsApp y videollamada.
 
 ## Contacto
 
@@ -34,7 +33,3 @@ NovaAgencyTEC ayuda a negocios y ecommerce en Argentina a automatizar tareas rep
 - WhatsApp: https://wa.me/5493424633285
 - Email: novaagencytec@gmail.com
 - Instagram: https://instagram.com/novaagencytec
-
-## Más información
-
-- Sitemap: https://novaagency.info/sitemap.xml
