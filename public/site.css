@@ -113,11 +113,27 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .cards-work { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .cards-work .card-wide { grid-column: span 2; }
 .cards-work .card-wide .card-img { aspect-ratio: 32 / 11; }
-.card-wheel { display: grid; place-items: center; background: #1a1a1a; }
-.wheel { width: 62%; aspect-ratio: 1; border-radius: 50%; border: 6px solid #2a2a2a;
-  background: conic-gradient(var(--orange) 0 45deg, #fff 45deg 90deg, #3a3a3a 90deg 135deg, var(--orange) 135deg 180deg, #fff 180deg 225deg, #3a3a3a 225deg 270deg, var(--orange) 270deg 315deg, #fff 315deg 360deg); }
-.js .work.seen .wheel { animation: spin 2.4s cubic-bezier(.2,.7,.2,1) 1; }
-@keyframes spin { from { transform: rotate(-540deg); } to { transform: none; } }
+/* Ruleta de FromNorth, en SVG: termina con el puntero sobre "Producto gratis" */
+.card-wheel { position: relative; display: grid; place-items: center; background: #161618; }
+.roulette { position: absolute; left: 0; right: 0; top: 5%; height: 82%; width: 100%; overflow: visible; }
+.w-lab { font: 800 15px/1 var(--num); letter-spacing: .04em; }
+.w-hub { font: 800 15px/1 var(--num); letter-spacing: .08em; fill: #fff; }
+.wheel-spin { transform-box: view-box; transform-origin: 200px 200px; transform: rotate(202.5deg); }
+.bulb { fill: #ffd9b8; }
+.bulb.b2 { fill: #6b4a33; }
+.pointer { transform-box: view-box; transform-origin: 200px 6px; }
+.wheel-rule { position: absolute; left: 10px; bottom: 8px; padding: 3px 9px; border-radius: 999px; background: var(--orange); color: var(--black); font: 600 12px/1.3 var(--text); }
+.js .roulette .wheel-spin { transform: rotate(0deg); }
+.js .seen .roulette .wheel-spin { transform: rotate(1282.5deg); transition: transform 4.2s cubic-bezier(.15,.75,.2,1); }
+.js .seen .roulette .pointer { animation: tick .18s ease-in-out 18 alternate, settle .5s 4.1s ease-out 1; }
+.js .seen .roulette .bulb { animation: blink .5s steps(1) 9 alternate; }
+.js .seen .roulette .bulb.b2 { animation-delay: .25s; }
+@keyframes tick { to { transform: rotate(-12deg); } }
+@keyframes settle { 0% { transform: rotate(-8deg); } 60% { transform: rotate(4deg); } 100% { transform: none; } }
+@keyframes blink { 0% { fill: #ffd9b8; } 50% { fill: #6b4a33; } }
+
+/* Aviso de que las filas se deslizan (solo celu) */
+.swipe-ui { display: none; }
 
 /* ---------- 2. Qué hacemos (blanco) ---------- */
 .what { background: var(--white); color: var(--ink); padding: clamp(64px, 9vw, 120px) var(--edge); }
@@ -263,6 +279,19 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .cards { display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 78%; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 calc(-1 * var(--pad)); padding: 0 var(--pad) 6px; scroll-padding: 0 var(--pad); scrollbar-width: none; }
   .cards::-webkit-scrollbar { display: none; }
   .card { scroll-snap-align: start; }
+  .swipe-ui { display: flex; align-items: center; gap: 12px; margin-top: 14px; }
+  .swipe-hint { font-size: 13px; font-weight: 600; color: var(--muted-light); display: inline-flex; align-items: center; gap: 6px; margin-right: auto; }
+  .work .swipe-hint, .local .swipe-hint { color: var(--muted-dark); }
+  .swipe-hint svg { width: 18px; height: 18px; animation: nudge 1.4s ease-in-out infinite; }
+  @keyframes nudge { 0%, 100% { transform: none; } 50% { transform: translateX(5px); } }
+  .swipe-dots { display: flex; gap: 6px; }
+  .swipe-dots i { width: 7px; height: 7px; border-radius: 50%; background: #c9c9c9; transition: width .2s, background-color .2s; }
+  .work .swipe-dots i { background: #444; }
+  .swipe-dots i.on { width: 20px; border-radius: 4px; background: var(--orange); }
+  .swipe-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid #d6d6d6; background: #fff; color: var(--ink); display: grid; place-items: center; cursor: pointer; }
+  .work .swipe-btn { background: #1a1a1a; border-color: #333; color: #fff; }
+  .swipe-btn:disabled { opacity: .35; }
+  .swipe-btn svg { width: 18px; height: 18px; }
   .cards-work .card-wide { grid-column: auto; }
   .cards-work .card-wide .card-img { aspect-ratio: 16 / 11; }
 

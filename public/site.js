@@ -35,6 +35,41 @@
     document.querySelectorAll('.work, .res-bot, .res-grid li, .aios-map').forEach(el => seen.observe(el));
   }
 
+  // Filas que se deslizan en el celu: flechas, puntitos y un empujón la primera vez.
+  const arrow = d => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${d}"/></svg>`;
+  document.querySelectorAll('.cards, .quotes').forEach(row => {
+    const items = [...row.children];
+    if (items.length < 2) return;
+    const ui = document.createElement('div');
+    ui.className = 'swipe-ui';
+    ui.innerHTML = `<span class="swipe-hint">Deslizá ${arrow('M5 12h14M13 6l6 6-6 6')}</span>
+      <span class="swipe-dots" aria-hidden="true">${items.map(() => '<i></i>').join('')}</span>
+      <button class="swipe-btn" type="button" aria-label="Anterior">${arrow('M15 6l-6 6 6 6')}</button>
+      <button class="swipe-btn" type="button" aria-label="Siguiente">${arrow('M9 6l6 6-6 6')}</button>`;
+    row.after(ui);
+    const dots = [...ui.querySelectorAll('.swipe-dots i')];
+    const [prev, next] = ui.querySelectorAll('.swipe-btn');
+    const step = () => items[1].offsetLeft - items[0].offsetLeft;
+    const sync = () => {
+      const i = Math.round(row.scrollLeft / step());
+      dots.forEach((d, j) => d.classList.toggle('on', j === i));
+      prev.disabled = row.scrollLeft < 4;
+      next.disabled = row.scrollLeft + row.clientWidth >= row.scrollWidth - 4;
+    };
+    prev.addEventListener('click', () => row.scrollBy({ left: -step(), behavior: reduced ? 'auto' : 'smooth' }));
+    next.addEventListener('click', () => row.scrollBy({ left: step(), behavior: reduced ? 'auto' : 'smooth' }));
+    row.addEventListener('scroll', () => requestAnimationFrame(sync), { passive: true });
+    sync();
+    if (!reduced && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver(([e]) => {
+        if (!e.isIntersecting || row.scrollWidth <= row.clientWidth) return;
+        io.disconnect();
+        setTimeout(() => { row.scrollBy({ left: 70, behavior: 'smooth' }); setTimeout(() => row.scrollTo({ left: 0, behavior: 'smooth' }), 650); }, 400);
+      }, { threshold: .6 });
+      io.observe(row);
+    }
+  });
+
   // WhatsApp flotante: aparece después del hero y se esconde en contacto.
   const float = document.querySelector('.wa-float');
   const hero = document.querySelector('.hero');
