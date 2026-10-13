@@ -22,7 +22,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Barlow+Condensed:wght@500;600;700&family=Instrument+Serif:ital@1&family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
   <link rel="preload" as="image" href="/assets/nl-dashboard.webp">
   <link rel="stylesheet" href="/site.css">
   <script>if ('IntersectionObserver' in window) document.documentElement.classList.add('js');</script>
@@ -69,16 +69,13 @@
 
   <main id="contenido">
 
-    <!-- 1. Hero: general, para cualquier dueño de negocio -->
+    <!-- 1. Hero -->
     <section id="inicio" class="hero">
       <div class="hero-text">
-        <p class="hero-who" data-in="1">Somos Facu y Mauri. Hacemos software desde Santa Fe.</p>
+        <p class="hero-who" data-in="1">Facu y Mauri, desde Santa Fe.</p>
         <h1 data-in="2">Que tu negocio venda más y vos trabajes menos.</h1>
-        <p class="hero-sub" data-in="3">Armamos sistemas y apps, diseñamos tu web o tu tienda, y automatizamos lo que hoy hacés a mano. Lo programamos nosotros y te lo dejamos andando.</p>
-        <ul class="hero-tags" data-in="4" aria-label="Lo que hacemos">
-          <li>Diseño web</li><li>Landings</li><li>Tiendanube</li><li>Email marketing</li><li>WhatsApp marketing</li><li>Bots y CRM</li><li>Apps a medida</li><li>Sistema operativo con IA</li><li>Automatizaciones</li>
-        </ul>
-        <div class="hero-actions" data-in="5">
+        <p class="hero-sub" data-in="3">Webs, tiendas, bots, marketing y sistemas con IA. Lo hacemos nosotros, de punta a punta.</p>
+        <div class="hero-actions" data-in="4">
           <a class="btn btn-wa" href="https://wa.me/5493424633285?text=Hola%20Nova%2C%20quiero%20contarles%20qu%C3%A9%20necesita%20mi%20negocio." target="_blank" rel="noopener" data-wa="hero">
             <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>
             <span>Escribinos por WhatsApp</span>
@@ -87,9 +84,9 @@
         </div>
       </div>
 
-      <div class="hero-board" data-in="3" aria-label="Capturas de trabajos reales: un sistema de gestión, una tienda online y un bot de WhatsApp">
+      <div class="hero-board" data-in="3" aria-label="Trabajos reales: un sistema de gestión, una tienda online y un bot de WhatsApp">
         <figure class="hb hb-system">
-          <img src="/assets/nl-dashboard.webp" width="1600" height="1000" alt="Panel de un sistema de stock y caja para un local de ropa, con ventas del mes">
+          <img src="/assets/nl-dashboard.webp" width="1600" height="1000" alt="Panel de un sistema de stock y caja con las ventas del mes">
           <figcaption>Sistema</figcaption>
         </figure>
         <figure class="hb hb-store">
@@ -108,56 +105,37 @@
       </div>
     </section>
 
-    <!-- 2. Qué hacemos: cuatro paquetes + sistema operativo con IA -->
+    <!-- 2. Qué hacemos: 4 servicios con imagen -->
     <section id="hacemos" class="what">
-      <header class="sec-head">
-        <h2>Qué hacemos</h2>
-        <p>Todo lo técnico que necesita un negocio para vender y ordenarse. Podés contratar una cosa o todo junto.</p>
-      </header>
-      <div class="packs">
-        <article class="pack">
+      <h2 class="sec-title">Qué hacemos</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-img"><img src="/assets/nl-web.webp" width="1200" height="750" loading="lazy" alt="Landing de Nova Local, diseñada por nosotros"></div>
           <h3>Diseño web</h3>
-          <p>Que tu negocio se vea bien, dé confianza y te encuentren.</p>
-          <ul>
-            <li>Sitios institucionales para estudios, profesionales y comercios que trabajan con consultas</li>
-            <li>Landings para campañas y landings de producto</li>
-            <li>Páginas pensadas para tu rubro: inmobiliarias, gastronomía, salud, educación</li>
-            <li>Sitios interactivos</li>
-            <li>Embudos que convierten visitas en ventas</li>
-          </ul>
+          <p>Sitios, landings y páginas que venden.</p>
+          <ul class="tags"><li>Institucionales</li><li>Landings</li><li>Por rubro</li></ul>
         </article>
-        <article class="pack">
+        <article class="card">
+          <div class="card-img"><img src="/assets/right-tienda.webp" width="1600" height="800" loading="lazy" alt="Tienda online de Right Botines"></div>
           <h3>Tiendanube</h3>
-          <p>Tu tienda online lista para vender.</p>
-          <ul>
-            <li>Si no sabés armarla, te la creamos y te enseñamos a usarla</li>
-            <li>Banners, portada, landing de producto y carrito a medida</li>
-            <li>Productos y fotos cargados en bloque</li>
-            <li>Migraciones desde otra plataforma</li>
-            <li>Medios de pago y de envío conectados</li>
-          </ul>
+          <p>Te la armamos y te enseñamos a usarla.</p>
+          <ul class="tags"><li>Tienda nueva</li><li>Diseño</li><li>Migraciones</li></ul>
         </article>
-        <article class="pack">
+        <article class="card">
+          <div class="card-img card-chat" aria-hidden="true">
+            <p class="msg out">Hola! Te quedó esto en el carrito</p>
+            <p class="msg in">uh si, me lo llevo</p>
+            <p class="msg out">Listo, te paso el link de pago</p>
+          </div>
           <h3>Email y WhatsApp marketing</h3>
-          <p>Mensajes que salen solos y ventas que vuelven.</p>
-          <ul>
-            <li>Recuperación de carritos abandonados</li>
-            <li>Campañas para clientes VIP, recurrentes, dormidos y nuevos</li>
-            <li>Mensajes de WhatsApp según lo que hizo cada cliente</li>
-            <li>Bots que atienden y toman pedidos las 24 horas</li>
-            <li>CRM para ver cada cliente, sus chats y sus pedidos</li>
-          </ul>
+          <p>Mensajes que salen solos y recuperan ventas.</p>
+          <ul class="tags"><li>Carritos</li><li>Bots</li><li>CRM</li></ul>
         </article>
-        <article class="pack">
-          <h3>Apps, sistemas y automatización</h3>
-          <p>Software hecho para cómo trabaja tu negocio.</p>
-          <ul>
-            <li>Aplicaciones web, paneles y dashboards a medida</li>
-            <li>Sistemas de stock, caja, ventas y empleados</li>
-            <li>Tareas repetitivas que se hacen solas: avisos, reportes, carga de datos</li>
-            <li>Conexión entre las herramientas que ya usás</li>
-            <li>IA que clasifica mails, sugiere respuestas, analiza datos y ayuda a tu equipo</li>
-          </ul>
+        <article class="card">
+          <div class="card-img"><img src="/assets/nl-dashboard.webp" width="1600" height="1000" loading="lazy" alt="Panel de un sistema de gestión hecho a medida"></div>
+          <h3>Apps y sistemas</h3>
+          <p>Software a medida y tareas que se hacen solas.</p>
+          <ul class="tags"><li>Paneles</li><li>Stock y caja</li><li>Automatización</li></ul>
         </article>
       </div>
 
@@ -165,15 +143,20 @@
         <div class="aios-copy">
           <p class="aios-kicker">Sistema operativo con IA</p>
           <h3>Todo tu negocio en un solo panel.</h3>
-          <p>Juntamos tu Tiendanube, Mercado Pago, Meta Ads, tus mails y tus planillas en una sola aplicación. Ves cuánto vendiste y cuánto ganaste de verdad, no solo lo que te muestra Meta, que se pierde una parte de las ventas. Y le podés preguntar a la IA por tus números.</p>
+          <p>Ves tu ganancia real, no lo que te dice Meta. Y le preguntás a la IA por tus números.</p>
           <a class="btn btn-wa" href="https://wa.me/5493424633285?text=Hola%20Nova%2C%20quiero%20saber%20m%C3%A1s%20del%20sistema%20operativo%20con%20IA." target="_blank" rel="noopener" data-wa="sistema-ia">
             <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>
             <span>Quiero el mío</span>
           </a>
         </div>
-        <figure class="aios-map" aria-label="Esquema: Tiendanube, Mercado Pago, Meta Ads, Mercado Libre, mails y planillas se juntan en un solo panel">
+        <figure class="aios-map" aria-label="Tiendanube, Mercado Pago, Meta Ads, Mercado Libre, Gmail y Google Sheets se juntan en un solo panel">
           <ul class="aios-sources">
-            <li>Tiendanube</li><li>Mercado Pago</li><li>Meta Ads</li><li>Mercado Libre</li><li>Mails</li><li>Planillas</li>
+            <li><img src="/assets/logos/tiendanube.png" width="34" height="24" alt="">Tiendanube</li>
+            <li><img src="/assets/logos/mercadopago.svg" width="24" height="24" alt="">Mercado Pago</li>
+            <li><img src="/assets/logos/meta.svg" width="24" height="24" alt="">Meta Ads</li>
+            <li><img src="/assets/logos/mercadopago.svg" width="24" height="24" alt="">Mercado Libre</li>
+            <li><img src="/assets/logos/gmail.svg" width="24" height="24" alt="">Gmail</li>
+            <li><img src="/assets/logos/googlesheets.svg" width="24" height="24" alt="">Planillas</li>
           </ul>
           <svg class="aios-lines" viewBox="0 0 100 300" preserveAspectRatio="none" aria-hidden="true">
             <path d="M0 25 C60 25 40 150 100 150"/><path d="M0 75 C60 75 40 150 100 150"/><path d="M0 125 C60 125 40 150 100 150"/>
@@ -182,96 +165,54 @@
           <div class="aios-panel">
             <p class="aios-panel-title">Tu panel</p>
             <ul>
-              <li>Ventas reales de todos los canales</li>
-              <li>Ganancia real, con costos y publicidad</li>
-              <li>Stock y alertas</li>
-              <li>Preguntale a la IA: "¿qué se vendió más este mes?"</li>
+              <li><span>Ventas reales</span><i style="--w:86%"></i></li>
+              <li><span>Ganancia real</span><i style="--w:58%"></i></li>
+              <li><span>Gasto en Meta</span><i style="--w:24%"></i></li>
             </ul>
+            <p class="aios-ask">"¿Qué se vendió más este mes?"</p>
           </div>
         </figure>
       </article>
     </section>
 
-    <!-- 3. Lo que hicimos: los trabajos, contados -->
+    <!-- 3. Lo que hicimos -->
     <section id="trabajos" class="work">
-      <header class="sec-head">
-        <h2>Lo que hicimos</h2>
-        <p>Algunos trabajos desde que arrancamos, en marzo de 2026.</p>
-      </header>
-
-      <article class="job job-right">
-        <div class="job-head">
+      <h2 class="sec-title">Lo que hicimos</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-img"><img src="/assets/right-boot.webp" width="640" height="512" loading="lazy" alt="Botín del catálogo de Right Botines"></div>
           <h3>Right Botines</h3>
-          <p class="job-meta">Tienda de botines, Santa Fe. Cliente desde mayo de 2026.</p>
-        </div>
-        <div class="job-grid">
-          <div class="job-part">
-            <h4>La noche antes del Hot Sale</h4>
-            <p>Se les bloqueó la tienda y el Hot Sale era al otro día. Llegaron a las 7 de la tarde. Pasamos todo el catálogo a otra plataforma con bots en Python que cargaban productos y fotos solos. A las 7 de la mañana estaban vendiendo.</p>
-            <figure class="night" aria-label="La noche del Hot Sale, de las 19 a las 7 hs">
-              <div class="night-track"><i></i></div>
-              <ol class="night-steps">
-                <li><time>19:00</time><span>Llegan con la tienda bloqueada</span></li>
-                <li><b>Toda la noche</b><span>Bots cargando productos y fotos</span></li>
-                <li><time>07:00</time><span>Tienda online para el Hot Sale</span></li>
-              </ol>
-            </figure>
-            <img class="job-shot" src="/assets/right-tienda.webp" width="1600" height="800" loading="lazy" alt="Tienda online de Right Botines, right.com.ar">
-          </div>
-          <div class="job-part">
-            <h4>Su WhatsApp, hoy</h4>
-            <p>Todos sus mensajes entran por un CRM que hicimos. El bot pregunta talle y tipo de botín, mira el stock real, manda las fotos y el link de pago, y avisa dónde está el envío. Escribe como Cami, la que atiende.</p>
-            <figure class="wa-demo" aria-label="Ejemplo de conversación del bot de Right">
-              <div class="wa-head"><img src="/assets/right-logo.webp" width="34" height="34" alt="" loading="lazy"><span>Right Botines<small>en línea</small></span></div>
-              <div class="wa-body">
-                <p class="msg in">hola tenes f50 en 42?</p>
-                <p class="msg out">Hola! Si, en 42 tenemos. Lo buscas para cesped o futsal?</p>
-                <p class="msg in">cesped</p>
-                <p class="msg out photo"><img src="/assets/right-boot.webp" width="640" height="512" alt="Foto de un botín del catálogo de Right" loading="lazy"></p>
-                <p class="msg out">Estos son los que hay en 42 para cesped. Si te gusta alguno te paso el link de pago</p>
-              </div>
-              <figcaption>Ejemplo de cómo responde. Las conversaciones reales son privadas.</figcaption>
-            </figure>
-          </div>
-        </div>
-        <p class="job-uses">Usó: <span>Tiendanube</span> <span>Apps, sistemas y automatización</span> <span>Email y WhatsApp marketing</span></p>
-      </article>
-
-      <div class="jobs-small">
-        <article class="job">
-          <h3>Bot de ventas para el Mundial</h3>
-          <p class="job-meta">Venta de álbumes y figuritas.</p>
-          <p>Un bot de WhatsApp con los mensajes pensados para cerrar la venta, y un CRM para seguir a cada contacto. Las ventas arrancaban en el chat, sin nadie escribiendo a mano.</p>
-          <p class="job-uses">Usó: <span>Email y WhatsApp marketing</span></p>
+          <p>Su tienda migrada en una noche, antes del Hot Sale. Hoy todo su WhatsApp entra por un CRM con bot.</p>
         </article>
-        <article class="job">
+        <article class="card">
+          <div class="card-img card-chat" aria-hidden="true">
+            <p class="msg in">tenes el album del mundial?</p>
+            <p class="msg out">Si! Lo queres solo o con sobres?</p>
+            <p class="msg in">con sobres</p>
+            <p class="msg out">Te paso el link de pago</p>
+          </div>
+          <h3>Bot del Mundial</h3>
+          <p>Bot de WhatsApp y CRM para vender álbumes y figuritas.</p>
+        </article>
+        <article class="card">
+          <div class="card-img card-wheel" aria-hidden="true"><div class="wheel"></div></div>
           <h3>FromNorth</h3>
-          <p class="job-meta">Ropa urbana.</p>
-          <p>Una ruleta de premios para los que compran, con cupones que se crean solos en la tienda, y mails automáticos para recuperar carritos abandonados.</p>
-          <p class="job-uses">Usó: <span>Email y WhatsApp marketing</span> <span>Apps, sistemas y automatización</span></p>
+          <p>Ruleta de premios para los que compran y mails que recuperan carritos.</p>
         </article>
-        <article class="job">
-          <img src="/assets/calabrese-store.webp" width="1400" height="621" loading="lazy" alt="Local físico de Import Calabrese en Santa Fe">
+        <article class="card">
+          <div class="card-img"><img style="object-position:left center" src="/assets/calabrese-store.webp" width="1400" height="621" loading="lazy" alt="Local físico de Import Calabrese en Santa Fe"></div>
           <h3>Import Calabrese</h3>
-          <p class="job-meta">Ropa deportiva, Santa Fe.</p>
-          <p>Rediseño completo de la tienda, con el local físico como protagonista.</p>
-          <p class="job-uses">Usó: <span>Diseño web</span> <span>Tiendanube</span></p>
+          <p>Rediseño completo de la tienda, con su local de Santa Fe como protagonista.</p>
         </article>
       </div>
     </section>
 
-    <!-- 4. Resultados: todos los números juntos -->
+    <!-- 4. Resultados + lo que dicen -->
     <section id="resultados" class="results">
-      <header class="sec-head">
-        <h2>Resultados</h2>
-        <p>Lo que lograron nuestros clientes. Las cifras las pasaron ellos o salen de sus sistemas.</p>
-      </header>
+      <h2 class="sec-title">Resultados</h2>
 
       <div class="res-bot">
-        <div class="res-bot-head">
-          <h3>Ventas que arrancaron en un bot de WhatsApp</h3>
-          <p>El bot del Mundial, con dos semanas funcionando. Cada número es una venta.</p>
-        </div>
+        <p class="res-bot-head"><b>Ventas que arrancaron en un bot de WhatsApp</b> <span>en dos semanas, cada número es una venta</span></p>
         <ul class="res-bot-nums">
           <li><b><span class="cur">USD</span><span data-count="5000">5.000</span></b></li>
           <li><b><span class="cur">USD</span><span data-count="6000">6.000</span></b></li>
@@ -281,78 +222,54 @@
       </div>
 
       <ul class="res-grid">
-        <li>
-          <b><span class="cur">$</span><span data-count="2800000">2.800.000</span></b>
-          <p>recuperados en carritos abandonados para una tienda online, con mails automáticos.</p>
-        </li>
-        <li>
-          <b><span class="cur">USD</span><span data-count="2000" data-prefix="+">+2.000</span></b>
-          <p>recuperados en carritos abandonados para FromNorth.</p>
-        </li>
-        <li>
-          <b data-count="130">130</b>
-          <p>giros de la ruleta de premios de FromNorth en un mes, sin pagar publicidad.</p>
-        </li>
-        <li>
-          <b data-count="276">276</b>
-          <p>productos con sus fotos cargados en una sola noche para Right Botines.</p>
-        </li>
-        <li>
-          <b>&lt;3 días</b>
-          <p>para rediseñar entera la tienda de Import Calabrese.</p>
-        </li>
+        <li><b><span class="cur">$</span><span data-count="2800000">2.800.000</span></b><p>recuperados en carritos abandonados</p></li>
+        <li><b><span class="cur">USD</span><span data-count="2000" data-prefix="+">+2.000</span></b><p>recuperados para FromNorth</p></li>
+        <li><b data-count="130">130</b><p>giros de ruleta en un mes, sin publicidad</p></li>
+        <li><b data-count="276">276</b><p>productos cargados en una noche</p></li>
       </ul>
+
+      <div class="quotes">
+        <figure class="quote">
+          <blockquote>"En 12 horas nos migraron toda la tienda […]. Literalmente estuvieron hasta las 7 de la mañana trabajando para nosotros."</blockquote>
+          <figcaption>Right Botines</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>"[…] El sistema de carritos abandonados recupera ventas que antes perdía. Una inversión que se paga sola."</blockquote>
+          <figcaption>Enzo R., FromNorth</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>"En menos de 3 días rediseñaron todo desde cero […]. Ahora la web transmite confianza desde el primer segundo."</blockquote>
+          <figcaption>Import Calabrese</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <!-- 5. Testimonios -->
-    <section class="quotes" aria-labelledby="quotes-title">
-      <h2 id="quotes-title">Lo que dicen ellos</h2>
-      <figure class="quote quote-main">
-        <blockquote>En 12 horas nos migraron toda la tienda a Empretienda, crearon la app de stock, cargaron más de 270 productos con sus imágenes y eliminaron más de 1.000 duplicados con scripts automáticos. Todo de urgencia, sin perder un solo dato. Literalmente estuvieron hasta las 7 de la mañana trabajando para nosotros.</blockquote>
-        <figcaption>Right Botines <span>tienda de botines, Santa Fe</span></figcaption>
-      </figure>
-      <figure class="quote">
-        <blockquote>Le dieron control total a mi ecommerce. El dashboard me muestra todo en tiempo real, la ruleta de premios engancha a los clientes y el sistema de carritos abandonados recupera ventas que antes perdía. Una inversión que se paga sola.</blockquote>
-        <figcaption>Enzo R. <span>FromNorth</span></figcaption>
-      </figure>
-      <figure class="quote">
-        <blockquote>En menos de 3 días rediseñaron todo desde cero: banner fuerte con identidad maradoniana, sección de quiénes somos mostrando nuestro local físico de Santa Fe, y un landing de producto con timer de oferta real. Ahora la web transmite confianza desde el primer segundo.</blockquote>
-        <figcaption>Import Calabrese <span>ropa deportiva, Santa Fe</span></figcaption>
-      </figure>
-    </section>
-
-    <!-- 6. Nova Local, producto propio -->
+    <!-- 5. Nova Local, con su propia identidad -->
     <section id="nova-local" class="local">
       <div class="local-copy">
-        <p class="local-kicker">Nuestro producto</p>
-        <h2>Nova Local</h2>
-        <p class="local-lead">Un sistema listo para locales de ropa. Lo usa Olmo Indumentaria todos los días.</p>
-        <ul class="local-list">
-          <li>Stock por talle, color y sucursal</li>
-          <li>Ventas desde la compu o el celu</li>
-          <li>Caja, empleados y fichajes</li>
-          <li>Cambios, clientes y reportes</li>
-          <li>Un asistente con IA que conoce tus números</li>
-        </ul>
+        <p class="nl-mark"><img src="/assets/logo-nova-96.png" width="40" height="40" alt=""><span><b>NOVA</b> LOCAL</span></p>
+        <h2>Tu local ordenado en lo que tardás en cerrar la caja.</h2>
+        <p class="nl-serif">Sin planillas, sin cuentas a mano, sin adivinar.</p>
+        <ul class="tags tags-dark"><li>Stock por talle</li><li>Caja y empleados</li><li>Ganancia real</li><li>IA</li></ul>
         <div class="local-actions">
-          <a class="btn btn-dark" href="https://local.novaagency.info" target="_blank" rel="noopener">Conocer Nova Local</a>
-          <a class="link link-ink" href="https://wa.me/5493424633285?text=Hola%2C%20quiero%20ver%20una%20demo%20de%20Nova%20Local." target="_blank" rel="noopener" data-wa="nova-local">Pedir una demo por WhatsApp</a>
+          <a class="btn btn-wa" href="https://local.novaagency.info" target="_blank" rel="noopener">Conocer Nova Local</a>
+          <a class="link" href="https://wa.me/5493424633285?text=Hola%2C%20quiero%20ver%20una%20demo%20de%20Nova%20Local." target="_blank" rel="noopener" data-wa="nova-local">Pedir una demo</a>
         </div>
       </div>
       <figure class="local-shot">
-        <img src="/assets/nl-dashboard.webp" width="1600" height="1000" loading="lazy" alt="Dashboard de Nova Local: ventas del período, evolución diaria y los 5 productos más vendidos">
-        <figcaption>Captura real con datos de demo.</figcaption>
+        <img class="ls-desk" src="/assets/nl-dashboard.webp" width="1600" height="1000" loading="lazy" alt="Dashboard de Nova Local con las ventas del mes">
+        <img class="ls-phone" src="/assets/nl-vender.webp" width="640" height="1160" loading="lazy" alt="Nova Local en el celular, vendiendo un jean por talle">
       </figure>
     </section>
 
-    <!-- 7. Cómo trabajamos -->
+    <!-- 6. Cómo trabajamos -->
     <section class="steps" aria-labelledby="steps-title">
-      <h2 id="steps-title">Cómo trabajamos</h2>
+      <h2 id="steps-title" class="sec-title">Cómo trabajamos</h2>
       <ol>
-        <li><h3>Charla de 30 minutos</h3><p>Nos contás qué hacés a mano y qué te come el día. Sin costo.</p></li>
-        <li><h3>Presupuesto cerrado</h3><p>Te decimos qué armaríamos, cuánto sale y cuándo está. Antes de escribir una línea.</p></li>
-        <li><h3>Lo vas viendo</h3><p>Te mostramos avances seguido y lo ajustamos con lo que nos digas.</p></li>
-        <li><h3>Andando y con soporte</h3><p>Te lo dejamos funcionando, te enseñamos a usarlo y seguimos atentos si algo falla.</p></li>
+        <li><h3>Charla de 30 min</h3><p>Sin costo.</p></li>
+        <li><h3>Presupuesto cerrado</h3><p>Antes de arrancar.</p></li>
+        <li><h3>Lo vas viendo</h3><p>Avances seguido.</p></li>
+        <li><h3>Andando y con soporte</h3><p>Te enseñamos a usarlo.</p></li>
       </ol>
     </section>
 
