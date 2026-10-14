@@ -73,6 +73,16 @@
     new IntersectionObserver(([e]) => { atContact = e.isIntersecting; sync(); }, { threshold: .15 }).observe(contact);
   }
 
+  // Sin click derecho, sin atajos de inspeccionar y sin arrastrar imágenes.
+  // Es una traba para el visitante común: el navegador siempre permite abrir sus herramientas desde el menú.
+  const isField = el => el && el.closest('input, textarea, select');
+  document.addEventListener('contextmenu', e => { if (!isField(e.target)) e.preventDefault(); });
+  document.addEventListener('dragstart', e => { if (e.target.closest('img, svg, a')) e.preventDefault(); });
+  document.addEventListener('keydown', e => {
+    const k = e.key.toLowerCase(), mod = e.ctrlKey || e.metaKey;
+    if (e.key === 'F12' || (mod && e.shiftKey && ['i', 'j', 'c'].includes(k)) || (mod && e.altKey && ['i', 'j', 'c', 'u'].includes(k)) || (mod && ['u', 's'].includes(k))) e.preventDefault();
+  });
+
   // Medir de dónde sale cada mensaje (sirve para los anuncios).
   document.addEventListener('click', e => {
     const a = e.target.closest('[data-wa]');
